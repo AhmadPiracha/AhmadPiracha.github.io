@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#55198b;
+    --secondary-color:black;
+    --primary-hover-color:#361a4f;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #dfd7d7;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+/*------------Social media section----*/
+
+#social-media {
+    display: flex;
+    justify-content:space-around; 
+    background-color: white;	
+    padding: 4px;
+}
+
+.social-icons img {
+	width: 25px;
+	transition: 0.5s;
+    margin-right: 10px;
+
+}
+.social-icons a:hover img {
+	transform: translateY(-10px);
+}
+/* .container-contact, */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* nav-bar */
+
+nav{
+    padding: 25px 0px;
+    box-shadow: 0px 0px 10px rgb(36, 35, 35);
+    background-color: rgb(31, 10, 10);
+    justify-content: center;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+    margin-left: auto;
+
+}
+.logo-name{
+font-size: 18px;
+letter-spacing: 2px;
+line-height: 1;
+color: white;
+font-family: 'Dancing Script', cursive;
+
+}
+.logo-name h1 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+.nav-links ul{
+    /* display: flex; */
+    list-style: none;
+    /* justify-content: flex-start; */
+
+}
+.nav-links li{
+padding: 0px 20px ;
+
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    /* color: var(--secondary-color); */
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    color: white;
+  
+
+}
+.nav-link.active,
+.nav-link:hover{
+   color:rgb(189, 160, 160);
+  
+}
+
+/* Button  */
+
+.btn{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    font-weight: 500;
+    transition:background-color 0.2s linear;
+    font-size: 15px;
+margin-top: 20px;
+}
+
+a.btn{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: var(--primary-hover-color);
+}
+.btn-mail{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color:var(--primary-color);
+    font-weight: 400;
+    transition:background-color 0.2s linear;
+    font-size: 20px;
+    margin: 50px;
+    /* margin-bottom: 60px; */
+
+}
+
+a.btn-mail{
+    text-decoration: none;
+}
+.btn-mail:hover{
+    color: var(--primary-hover-color);
+    background-color: white;
+    border: 2px solid var(--primary-hover-color);
+  
+}
+
+
+input[type="submit"].btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+.underlined-heading{
+    color: var(--primary-color);
+}
+.underline-heading-content{
+    width: max-content;
+    margin: 0 auto;
+}
+.underline-heading-content h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.underlined-heading .line{
+    margin: 0 auto;
+    width: 60%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    margin-top: 2px;
+}
+
+/* Form  */
+
+form{
+    margin-bottom: 40px;
+}
+.input-group{
+    padding: 10px 10px;
+}
+.input-group label{
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+input:not([type='radio']):not([type="checkbox"]):not([type="submit"]),textarea{
+width: 100%;
+border-radius: 5px;
+border: 2px solid var(--primary-color) ;
+padding: 10px;
+font-family: 'Poppins', sans-serif;
+transition: box-shadow 0.3s ease-in-out;
+
+}
+input:not([type='radio']):not([type="checkbox"]):not([type="submit"]):focus,textarea{
+box-shadow: 0px 4px 10px rgb(211,211,211);  
+outline: none;
+}
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+
+footer{
+    background-color:var(--primary-hover-color);
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+footer a{
+    color:green;
+    text-decoration: none;
+}
+.center{
+    text-align: center;
+}
+
+
+/* Media Queries  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   /* nav-bar */
+
+nav{
+    padding: 10px 0px;
+    box-shadow: 0px 0px 10px rgb(36, 35, 35);
+    background-color: rgb(29, 28, 28);
+  
+}
+
+.logo-name{
+
+display: none;
+}
+
+.nav-links li{
+padding: 0px 3px ;
+
+}
+.nav-links ul{
+    /* display: flex; */
+    list-style: none;
+    /* justify-content: flex-start; */
+
+}
+
+/* Button  */
+
+.btn{
+   
+    padding: 5px 5px;
+    border-radius: 10px;
+    
+    font-weight: 300;
+    font-size: 15px;
+margin-top: 20px;
+}
+
+.btn-mail{
+   
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 20px;
+justify-content: center;
+}
+
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    
+nav{
+    padding: 15px 0px;
+   
+}
+
+.logo-name{
+font-size: 8px;
+letter-spacing: 0px;
+
+}
+
+.nav-links li{
+padding: 0px 10px ;
+
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    /* justify-content: flex-start; */
+
+}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .logo-name{
+        font-size: 15px;
+        letter-spacing: 0px;
+        
+        }
+   
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .logo-name{
+        font-size: 15px;
+        letter-spacing: 0px;
+        
+        }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .logo-name{
+        font-size: 15px;
+        letter-spacing: 0px;
+        
+        }
+  }

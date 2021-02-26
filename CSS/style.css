@@ -1,0 +1,199 @@
+
+/* Completed */
+
+
+main.container{
+    display: flex;
+    margin:50px ;
+}
+.text-container{
+    width: 50%;
+    padding-bottom: 40px;
+    padding-left: 50px;
+}
+.text-container h1{
+   font-size: 40px;
+   margin-bottom: 0.6enm;
+   font-weight: 500;
+}
+.text-container p{
+    font-size: 25px;
+    margin-bottom: 0.6enm;
+    font-weight: 200;
+ }
+.side-img
+{
+    width: 50%;
+    height: 500px;
+    background-image: url("Asserts/main.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-icons{
+    padding: 10px 0px;
+    display: flex;
+}
+.social-icons a{
+
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+
+.education-container{
+    margin: 34px;
+     /* display: flex; */
+     
+justify-content:space-around; 
+}
+
+.education-container .box{
+
+	padding:20px 10px;
+   margin: 10px 6px;
+   background-color: white;
+   transition: transform 0.5s;
+   
+}
+
+.education-container .box:hover{
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.1);
+
+}
+.education-container .box h2{
+    font-size: 23px;
+    font-weight:bold;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+.create{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    margin-right: 20px;
+
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text-container{
+        width: 100%;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+    .text-container h1{
+       font-size: 40px;
+       margin-bottom: 0.2enm;
+       font-weight: 300;
+    }
+    .text-container p{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 200;
+        margin-right: 30px;
+     }
+    .side-img
+    {
+      display: none;
+    }
+    
+    
+.education-container{
+    margin: 34px;
+     /* display: flex; */
+     
+justify-content:space-around; 
+}
+
+.education-container .box h2{
+    font-size: 16px;
+    font-weight:bold;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   
+    .text-container h1{
+       font-size: 25px;
+       margin-bottom: 0.6enm;
+       font-weight: 400;
+    }
+    .text-container p{
+        font-size: 20px;
+        margin-bottom: 0.6enm;
+        font-weight: 200;
+     }
+     
+    .side-img
+    {
+        width: 50%;
+        height: 250px;
+       
+    }
+    
+    
+    
+    
+    .education-container{
+        margin: 34px;
+         
+    justify-content:space-around; 
+    }
+    
+    .education-container .box{
+    
+        padding:20px 10px;
+       margin: 10px 6px;
+       background-color: white;
+       transition: transform 0.5s;
+       
+    }
+    
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+    .text-container h1{
+       font-size: 30px;
+       margin-bottom: 0.6enm;
+       font-weight: 500;
+    }
+    .text-container p{
+        font-size: 24px;
+        margin-bottom: 0.6enm;
+        font-weight: 200;
+     }
+    
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .side-img
+    {
+        width: 50%;
+        height: 400px;
+    }
+    
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    
+}
