@@ -21,11 +21,10 @@ main.container{
     margin-bottom: 0.6enm;
     font-weight: 200;
  }
-.side-img
+.side-img img
 {
     width: 50%;
-    height: 500px;
-    background-image:url("main.png");
+    height: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
