@@ -35,17 +35,25 @@ section.about .social-icons a{
     margin-right: 14px;
 }
 
+@media only screen and (min-width: 454px) {
 
+   
+    section.about p{
+        line-height: 1.8;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        margin-right: 70px;
+
+    }
+   
+
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
     section.about{
         padding: 20px 0 ;
     }
-    section.about .container{
-        padding: 40px 0 ;
-        display: flex;
-     }
      
     .about-img{
         display: none;
@@ -56,7 +64,10 @@ section.about .social-icons a{
         font-size: 20px;
         font-weight: 500px;
     }
-    
+    section.about .container{
+        padding: 40px 0 ;
+        /* display: flex; */
+     }
 
 }
 
@@ -67,11 +78,9 @@ section.about .social-icons a{
     }
     section.about .container{
         padding: 40px 0 ;
-        /* display: flex; */
      }
      
     .about-img{
-        /* height: 300px; */
         margin :30px;
         
     }
@@ -80,9 +89,6 @@ section.about .social-icons a{
         font-size: 20px;
         font-weight: 500px;
     }
-/*     
-    section.about .ab-main{
-    }  */
 
     section.about h3{
     
@@ -92,7 +98,8 @@ section.about .social-icons a{
     } 
     section.about p{
         line-height: 1.8;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:0px;
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: black;
     }
     section.about .social-icons{
@@ -100,7 +107,6 @@ section.about .social-icons a{
         display: flex;
     }
     section.about .social-icons a{
-        /* align-items: flex-start; */
         margin-right: 14px;
     }
     
